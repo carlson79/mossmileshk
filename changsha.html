@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>长马：一个经验 — Moss &amp; Miles 苔径</title>
+<style>
+  :root{
+    --sand-deep:#2b2118;
+    --sand:#9a6b2f;
+    --sand-light:#d9b380;
+    --paper:#faf6ee;
+    --ink:#3a2e1e;
+    --grey:#8a8070;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Songti SC','Noto Serif SC','SimSun',serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:2;
+  }
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:10;
+    padding:16px 28px;
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px;letter-spacing:.1em;
+    background:linear-gradient(to bottom, rgba(20,14,8,.55), transparent);
+  }
+  nav a{color:#f0e6d6;text-decoration:none;}
+  nav a:hover{color:var(--sand-light);}
+  header{
+    position:relative;min-height:80vh;
+    display:flex;align-items:flex-end;overflow:hidden;
+    background:var(--sand-deep);
+  }
+  header .bg{
+    position:absolute;inset:0;
+    background:url('images/changsha-medal.jpg') center/cover no-repeat;
+    opacity:.6;
+  }
+  header .veil{
+    position:absolute;inset:0;
+    background:linear-gradient(to top, rgba(25,17,9,.93) 0%, rgba(25,17,9,.25) 55%, rgba(25,17,9,.3) 100%);
+  }
+  header .title{
+    position:relative;max-width:780px;margin:0 auto;
+    padding:0 28px 72px;color:#f7efe0;
+  }
+  header .kicker{
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12px;letter-spacing:.35em;
+    color:var(--sand-light);margin-bottom:18px;
+  }
+  header h1{font-size:clamp(30px,5.5vw,52px);font-weight:bold;line-height:1.35;}
+  header .sub{margin-top:16px;color:#e6d3b3;font-size:16px;}
+  .stats{
+    background:var(--sand-deep);color:#e6d3b3;
+    display:flex;justify-content:center;gap:0;flex-wrap:wrap;
+  }
+  .stats div{
+    padding:26px 44px;text-align:center;
+    border-right:1px solid rgba(230,211,179,.15);
+  }
+  .stats div:last-child{border-right:none;}
+  .stats .num{font-size:28px;color:#fff;font-family:Georgia,serif;}
+  .stats .lbl{font-size:12px;letter-spacing:.2em;margin-top:4px;font-family:'Segoe UI',sans-serif;}
+  main{max-width:780px;margin:0 auto;padding:72px 28px 40px;}
+  p{margin-bottom:1.5em;font-size:17.5px;}
+  p:first-of-type::first-letter{
+    font-size:3.2em;float:left;line-height:.85;
+    padding:6px 12px 0 0;color:var(--sand);
+  }
+  h2.act{
+    font-size:21px;font-weight:bold;color:var(--sand);
+    margin:56px 0 24px;letter-spacing:.1em;
+    display:flex;align-items:center;gap:16px;
+  }
+  h2.act .no{
+    font-family:Georgia,serif;font-style:italic;font-weight:normal;
+    color:var(--sand-light);font-size:17px;letter-spacing:.05em;
+  }
+  h2.act::after{content:"";flex:1;height:1px;background:#e0d5c0;}
+  .pull{
+    border-left:3px solid var(--sand-light);
+    padding:6px 0 6px 24px;margin:44px 0;
+    font-size:22px;color:var(--sand);line-height:1.8;font-weight:bold;
+  }
+  figure{margin:48px 0;}
+  figure img{
+    width:100%;display:block;border-radius:6px;
+    box-shadow:0 12px 40px rgba(43,33,24,.2);
+  }
+  figure.tall{max-width:420px;margin-left:auto;margin-right:auto;}
+  figcaption{
+    margin-top:14px;
+    font-family:'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:13px;color:var(--grey);text-align:center;
+  }
+  figcaption b{color:var(--sand);}
+  .fin{
+    margin-top:56px;text-align:center;
+    font-size:20px;color:var(--sand);letter-spacing:.3em;font-weight:bold;
+  }
+  footer{max-width:780px;margin:0 auto;padding:24px 28px 80px;}
+  .sig{
+    border-top:1px solid #e0d5c0;padding-top:28px;
+    color:var(--grey);font-size:14px;
+  }
+  .sig a{color:var(--sand);text-decoration:none;}
+</style>
+</head>
+<body>
+
+<nav><a href="index.html">← Moss &amp; Miles 苔径</a></nav>
+
+<header>
+  <div class="bg"></div>
+  <div class="veil"></div>
+  <div class="title">
+    <div class="kicker">2026 长 沙 马 拉 松 · 随 笔</div>
+    <h1>长马：一个经验</h1>
+    <div class="sub">2026年11月15日 · 长沙 · 42.195km · 3:44:44</div>
+  </div>
+</header>
+
+<div class="stats">
+  <div><div class="num">157<small> 小时</small></div><div class="lbl">2026 年训练</div></div>
+  <div><div class="num">42.195<small> km</small></div><div class="lbl">全程距离</div></div>
+  <div><div class="num">3:44:44</div><div class="lbl">完赛成绩</div></div>
+  <div><div class="num">180</div><div class="lbl">步频 · 始终</div></div>
+</div>
+
+<main>
+
+  <h2 class="act"><span class="no">Act I</span>减量</h2>
+
+  <p>赛前一周，跑完最后一个30公里LSD，开始减量。饮食跟着一起调：前三天只吃肉，把身体里存着的糖原一点点耗掉——到周三，人已经有点饿昏的感觉；后三天只吃碳水，让糖原全部换成新长出来的。比赛日早上的配方是米饭加椰子水煮的粥，朋友笑称这是日本人的吃法。</p>
+
+  <p>现在回头看，那七天本身就是一种训练，练的不是腿，是"空"。把旧的烧掉，把位置腾出来，身体才肯重新装满。长跑这件事，功夫大半在比赛之外——杜威说一个完整的经验从期待开始，马拉松的期待，是用一周的饥饿喂出来的。</p>
+
+  <h2 class="act"><span class="no">Act II</span>配速</h2>
+
+  <p>起点，多云，12°C，北风，适合跑步的天气。人群里看到一位轮椅大哥，神情乐观，跟周围的跑友一一击掌。赛前没花精力跟朋友互动拍照——想留着体力，今天想冲330。</p>
+
+  <p>第2公里，6分15秒。过第一个厕所的时候还想憋过去，说不定出出汗就好了；到第二个厕所就没再犹豫——大脑战胜了腿。全程最慢的一公里，不在终点前，在起点。此后如释重负，终于撒开了脚丫子：5分28、5分08、5分04、4分57、4分55。路过毛泽东青年艺术雕塑都没停下来拍照，反而加了速。</p>
+
+  <p>15公里过江。江上小舟游弋，微风拂面。印象最深的是江边公园大片的绿草地——要能拥有这样一片园子做园艺，此生再无他求，也许这就是心底的岁月静好。这个念头只停了几秒钟，配速没掉。</p>
+
+  <p>第21公里，4分48秒，全程最快的一公里，恰好在半程。半马的计时牌从头顶掠过，身体还有余裕。这提速也许来自全马对半马的优越感——你们的终点，才到我的中途。现在回头看，那是整场赛跑最像谎言的一公里：身体在半程递给你一颗糖，让你误以为后半程不过是前半程的重复。</p>
+
+  <p>25到32公里，脑子开始放电影：怎么把"上市操盘"做成自己的品牌；移居香港之后，渣马要怎样体验；AI时代怎么革新孩子的教育，借机器鸭这个道具，养出孩子探索的动力。都是短时镜头，理性很快把脑子拉回跑道——坚持到35公里不抽筋，就成功大半。能量胶按15、25、35公里排好，像提前给后半程埋下的三根桩。</p>
+
+  <h2 class="act"><span class="no">Act III</span>撞墙</h2>
+
+  <p>第33公里，5分24秒。速度慢下来的第一反应，是不再看表。脚变沉了。</p>
+
+  <p>过了35公里，心里冒出想停一下、喘口气的念头。思想斗争了几个回合，理性的那一半占了上风——回头算了一笔账：35公里之后要提到4分以内的配速，才够得着330。这笔账一算完，就知道330没有了。</p>
+
+  <div class="pull">墙原来不是一堵墙，墙是一张资产负债表，资产是剩下的腿，负债是剩下的路。</div>
+
+  <p>心率倒是很诚实：从158降到154，再降到151。腿先投了降，心还想打。配速从5'24"一路退到5'47"，浑身上下只有一个数字没有动：步频180。第1公里是180，第38公里还是180。腿已经不是腿了，是两根借来的木头，可那个节拍还在，一下，一下，像有人在身体里敲木鱼。</p>
+
+  <h2 class="act"><span class="no">Act IV</span>冲刺</h2>
+
+  <p>最后三公里，看到的是别人加速冲线，345的配速员从我身边超了过去；听到的是两岸的加油声。声音都是真的，可它们进不到身体里面来。6分03、6分10、6分13，最后0.53公里，7分10秒一公里，几乎是走完的。</p>
+
+  <figure class="tall">
+    <img src="images/changsha-cheer.jpg" alt="长马赛道旁加油的啦啦队员">
+    <figcaption><b>01 ·</b> 赛道旁的加油声。声音都是真的，可它们进不到身体里面来。</figcaption>
+  </figure>
+
+  <p>挂上奖牌那一秒，没有兴奋，只有松一口气，冷静得不可想象，甚至没有拍照的冲动。</p>
+
+  <p>后来想起王军霞讲的，亚特兰大高烧不退场，赛中靠注视裁判、看到对方点头来汲取力量。对照自己这一场，从头到尾好像都待在自己的空间里——轮椅大哥的笑、两岸的加油，都看见了，听见了，却没有借到力。</p>
+
+  <p>但真的是没有愿力吗？也许愿力有两种。一种来自外面的点头，一种来自身体里的节拍器——外界的一切都乱了，它还在原地，一下，一下。杜威说，一个完整的经验不在于结尾有多激昂，而在于它把自己走完了。</p>
+
+  <p>42.195公里，3小时44分，是2026年157小时训练的最后一幕。终点没有烟花，只有呼吸。</p>
+
+  <div class="fin">呼吸就是圆满。</div>
+
+  <figure class="tall">
+    <img src="images/changsha-cert.jpg" alt="2026长沙马拉松成绩证书">
+    <figcaption><b>02 ·</b> 2026 长沙马拉松成绩证书：净成绩 3:44:44，平均配速 5:20，45–49 岁组第 743 名。</figcaption>
+  </figure>
+
+</main>
+
+<footer>
+  <div class="sig">2026年11月，记于长马之后 · <a href="index.html">Back to Moss &amp; Miles →</a></div>
+</footer>
+
+</body>
+</html>
